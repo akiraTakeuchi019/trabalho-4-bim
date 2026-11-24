@@ -273,6 +273,12 @@ footer{
   border: solid 2px #070807;
 }
 
+.img-i{
+  max-width: 500px ;
+  max-height: 450px ;
+  border: 2px solid #7b7e79;
+}
+
 @media (max-width: 500px) {
   .capa h1 { font-size: 32px; }
   h2 { font-size: 24px; }
@@ -290,5 +296,27 @@ footer{
   .img-h{
     max-width: 450px;
     max-width: 400px;
+  }
+  .img-f{
+    max-width:350px ;
+    min-height:200px ;
+  }
+
+  .img-e{
+    min-width: 300px;
+    min-height: 200px;
+  }
+  
+  .img-g{
+    max-height:300px ;
+    max-width:250px ;
+  }
+  .img-d{
+    min-width: 200px;
+    min-height: 150px;
+  }
+  .img-i{
+    max-width:400px ;
+    max-height:350px ;
   }
 }
