@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Alegreya:wght@400;600&display=swap");
+
+ *{ box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #f3f1ec;          /* fundo */
+  color: #23201c;               /* preto */
+  font-family: "Alegreya", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+/*certinho*/
+
+.capa {
+  background: #23201c;          
+  text-align: center;
+  padding: 60px 20px 40px;
+  border-bottom: 6px solid #8e2a22;  
+}
+/*isso ia ser apaguado essa sigla aqui 
+mas funcionou sem precisar extingurir 
+entao nao toca*/
+
+.sigla {
+  font-family: "Cinzel", Georgia, serif;
+  color: #a67c2e;               
+  letter-spacing: 6px;
+  margin: 0 0 12px;
+}
+.capa h1 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 48px;
+  margin: 0;
+  color: #a67c2e;  
+}
+.datas {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 20px;
+  margin-top: 16px;
+}
+.datas span { color: #a67c2e; }
+
+
+nav {
+  position: sticky;   
+  top: 0;
+  background: #8e2a22;         
+  z-index: 10;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  display: block;
+  padding: 12px 16px;
+  color: #f3f1ec;
+  text-decoration: none;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 14px;
+}
+nav a:hover {
+ background: #6e1f19;
+}   /* vermelho mais escuro ao passar o mouse */
+
+/* ===== Seçoes ===== */
+main { padding: 0 16px; }
+
+section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 50px 0 20px;
+  scroll-margin-top: 50px;
+}
+section.larga { max-width: 1040px; }
+
+.rotulo {
+  font-family: "Cinzel", Georgia, serif;
+  color: #8e2a22;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+h2 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 32px;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #a67c2e;   /* linha dourada essa nao precisa morrer */
+}
+h3 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 20px;
+  margin: 0 0 6px;
+}
+h4 {
+  color: #8e2a22;
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+
+.tempo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+.ano {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  color: #8e2a22;
+}
+.barra {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+}
+.tempo-legenda {
+  display: flex;
+  justify-content: space-between;
+  color: #6b655c;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+
+.duas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.painel {
+  background: white;
+  border: 1px solid #e3dfd6;
+  /*reis borda da caixa rip*/
+  padding: 24px;
+}
+
+
+
+ol.reis {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  counter-reset: rei;
+}
+ol.reis li {
+  counter-increment: rei;
+  position: relative;
+  background: white;
+  border: 1px solid #e3dfd6;
+  padding: 16px 20px 16px 35px;
+  display: flex;
+}
+.img{
+  border-radius: 100%;
+  margin-right: 15px ;
+  border: 4px solid#8e2a22;
+}
+
+ol.reis p {
+  margin: 0;
+  color: #6b655c;
+}
+
+.card {
+  background: white;              /* fundo branco da caixa */
+  border: 1px solid #e3dfd6;      /* borda cinza fina */
+  padding: 24px 28px;             /* espaço dentro da caixa */
+  margin: 30px auto;              /* espaço entre uma caixa e outra */
+}
+
+footer{
+  margin-bottom: 0;
+}
+.questão{
+  background: white;              
+  border: 1px solid #e3dfd6;      
+  padding: 24px 28px;             
+  margin: 30px auto;              
+}
+
+.caixa{
+  display: flex;
+  flex-direction: column;
+}
+
+.respostas{
+  padding: 1rem 0.5rem;
+}
+
+.botao{
+  border: 0px;
+  margin: 0.2rem 0;
+  padding: 13px 25px;
+  background-color: #8e2a22;
+  color: #f3f1ec;
+  border-radius: 0.1rem;
+}
+
+.botao:hover{
+    background: #6e1f19;
+}
+
+.div-ima{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.div-titulo{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.img-a{
+  max-height: 350px;
+  max-width:350px;
+  border: 4px solid#8e2a22;
+}
+
+.img-b{
+  max-height: 300px;
+  max-width:300px;
+  border-radius: 60px;
+  border: 2px solid #080808;
+
+}
+
+.img-c{
+  max-height: 450px;
+  max-width: 450px;
+  border: 1px solid #070807;
+}
+
+.img-d{
+  min-width: 250px;
+  min-height: 300px;
+  border-radius: 60px;
+  border: 2px solid #080808;
+}
+
+.img-e{
+  min-width: 146px;
+  min-height: 320px;
+  border: 3px solid #6e1f19;
+}
+  
+.img-f{
+  min-height: 330px;
+  min-width: 177px;
+  border: 2px solid #7b7e79;
+}
+
+.img-g{
+  border-radius: 40px;
+  border: 2px solid #080808;
+}
+
+.img-h{
+  max-width: 550px ;
+  max-height: 450px ;
+  border: solid 2px #070807;
+}
+
+@media (max-width: 500px) {
+  .capa h1 { font-size: 32px; }
+  h2 { font-size: 24px; }
+  ol.reis li { padding-left: 56px; 
+  display: block;}
+  ol.reis li .div-img{
+    display: flex;
+    justify-content: center;
+     
+  }
+  .img-c{
+    max-width:450px;
+    max-width:400px;
+  }
+  .img-h{
+    max-width: 450px;
+    max-width: 400px;
+  }
+}
