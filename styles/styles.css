@@ -290,12 +290,12 @@ footer{
      
   }
   .img-c{
-    max-width:450px;
-    max-width:400px;
+    max-width:350px;
+    max-width:300px;
   }
   .img-h{
-    max-width: 450px;
-    max-width: 400px;
+    max-width: 350px;
+    max-width: 300px;
   }
   .img-f{
     max-width:350px ;
@@ -316,7 +316,11 @@ footer{
     min-height: 150px;
   }
   .img-i{
-    max-width:400px ;
+    max-width:300px ;
     max-height:350px ;
+  }
+  .img-a{
+    max-width:250px ;
+    max-height:200px ;
   }
 }
